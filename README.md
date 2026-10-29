@@ -11,7 +11,11 @@ npm install
 npm run dev
 ```
 
-Abra http://localhost:3000. Para gerar a versão de produção, use `npm run build` e depois `npm start`. Para verificar os tipos, use `npm run typecheck`.
+Abra http://localhost:3000. Para gerar a versão de produção, use `npm run build`. O site completo será gerado na pasta `out`, que pode ser servida por uma hospedagem estática. Para verificar os tipos, use `npm run typecheck`.
+
+## Publicação no Netlify
+
+Conecte a branch `main` deste repositório. O arquivo `netlify.toml` define o comando `npm run build`, a pasta de publicação `out` e o Node.js 22. O simulador roda no navegador e não precisa de funções no servidor. Após alterações no GitHub, o Netlify pode publicar automaticamente uma nova versão.
 
 ## Primeira etapa
 
